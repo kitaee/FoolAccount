@@ -13,14 +13,14 @@
 
 <table class="table">
     <tr>
-        <th>글 번호</th>
-        <th>글쓴이</th>
-        <th>글 제목</th>
+        <th>회사</th>
+        <th>가격</th>
+        <th>전달 대비 변동사항</th>
     </tr>
-    <tr th:each="i: ${#numbers.sequence(1, 10)}">
-        <td th:text="${i}"></td>
-        <td th:text="글쓴이 + ${i}"></td>
-        <td th:text="제목 + ${i}"></td>
+    <tr th:each="domesticStockList, index : ${domesticStockList}">
+        <td th:text="${domesticStockList}"></td>
+        <td th:text="${domesticStockPriceList[index.index]}"></td>
+        <td th:text="${index.index+1}"></td>
     </tr>
 </table>
 
