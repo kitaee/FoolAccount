@@ -96,4 +96,6 @@ public class JpaMemberRepository implements MemberRepository{
 
         return result.stream().findAny();
     }
+
+
 }

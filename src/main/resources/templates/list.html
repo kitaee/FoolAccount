@@ -7,18 +7,11 @@
 </head>
 <body>
 <div class="nav">
-    <div>
-        <div th:if="${member}==null" id="grid">
-            <div class="coin_title">월간 코인</div>
-            <div class="login"><button type="button" class="login_button" onclick="location.href='login'">로그인</button></div>
-            <div class="join"><button type="button" class="join_button" onclick="location.href='join'">회원가입</button></div>
-            <div class="stock_title">월간 주식</div>
-        </div>
-        <div th:if="${member}!=null" id="grid4">
-            <div class="coin_title">월간 코인</div>
-            <a th:href="@{|${member_id}|}" th:text="|${name}님 자산|" class="welcome">thymeleaf</a>
-            <div class="stock_title">월간 주식</div>
-        </div>
+    <div id="grid">
+        <a href="boards" class="coin_title">얼간 코인</a>
+        <div class="login"><button type="button" class="login_button" onclick="location.href='login'">로그인</button></div>
+        <div class="join"><button type="button" class="join_button" onclick="location.href='join'">회원가입</button></div>
+        <a href="boards" class="stock_title">얼간 주식</a>
     </div>
 </div>
 <div id="grid1">

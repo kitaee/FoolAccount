@@ -110,10 +110,12 @@ img{
 }
 
 a{
-    text-decoration : none;
-    font-weight : bold;
     color : white;
+    text-decoration-line : none;
+    text-decoration : none;
 }
+
+
 
 
 
