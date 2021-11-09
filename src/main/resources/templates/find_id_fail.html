@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>얼간뱅크</title>
+    <link rel="stylesheet" type="text/css" href="/css/find_id_fail.css">
+</head>
+<body>
+<script>
+    alert('입력하신 이름이나 번호가 올바르지 않습니다. 다시 입력해주세요.');
+</script>
+<div class="nav">
+    <div class="factory_name">
+        <button type="button" class="factory_button" onclick="location.href='main'">얼간증권</button>
+    </div>
+</div>
+<div class="main">
+    <div id="grid">
+        <div class="left">
+        </div>
+        <div class="center">
+            <form action = "/find_id" method="post">
+                <div class="find_id_title">
+                    아이디찾기
+                </div>
+                <div class="enter_name">
+                    <input type="text" id="name" name="name" placeholder="이름">
+                </div>
+                <div class="enter_phone">
+                    <input type="text" id="phone" name="phone" placeholder="핸드폰 번호">
+                </div>
+                <div class="find_id_complete">
+                    <button type="submit" class="find_id_button">아이디찾기</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+</body>
+</html>

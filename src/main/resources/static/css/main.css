@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color : white;
+    font-weight : bold;
+    text-align : center;
+    font-family : 'Nanum Gothic';
+}
+
+.main{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.introduce1{
+    font-size : 70px;
+}
+
+.introduce2{
+    margin-top : 20px;
+    font-size : 30px;
+}
+
+.start_button{
+    width : 230px;
+    height : 50px;
+    border-radius : 25px;
+    background-color : black;
+    color : white;
+    margin-top : 20px;
+    border : 2px solid white;
+    font-size : 30px;
+    font-weight : bold;
+}

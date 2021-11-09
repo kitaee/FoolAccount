@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>얼간뱅크</title>
+    <link rel="stylesheet" type="text/css" href="/css/mypage.css">
+    <meta http-equiv="refresh" content="100">
+</head>
+<body>
+<div class="my_asset">
+    <div class="profit">
+        <div class="assetInfo">
+            <span th:text="|원금 : ${principal}원 / |"></span>
+            <span th:text="| 자산가치 : ${myAssetValue}원  |"></span>
+        </div>
+        <div class="assetProfitInfo">
+            <span th:text="|내 수익률 : |"></span>
+            <span class="up" th:if="${profit}>0" th:text="|+${profit}원(${percent}%)|"></span>
+            <span class="down" th:if="${profit}<0" th:text="|${profit}원(${percent}%)|"></span>
+            <span class="noChange" th:if="${profit}==0" th:text="|${profit}원(${percent}%)|"></span><br>
+        </div>
+        <br>
+    </div>
+    <table class="tb_asset">
+        <thead>
+        <tr>
+            <th>자산 종류</th>
+            <th>기업 이름</th>
+            <th>수량</th>
+            <th>평균 단가</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${noDuplicateAssetList.id}==${id} and ${noDuplicateAssetList.count}!=0"  th:each="noDuplicateAssetList : ${noDuplicateAssetList}">
+            <td th:text="${noDuplicateAssetList.kind}"></td>
+            <td th:text="${noDuplicateAssetList.corporation}"></td>
+            <td th:text="${noDuplicateAssetList.count}"></td>
+            <td th:text="${noDuplicateAssetList.averagePrice}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="plus">
+        <button type="button" target="_blank" class="plus_button" onclick="window.open('/register_asset', '_blank',  'width=400', 'height=300', 'top=40', 'left=100')">구매 / 판매</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+</script>

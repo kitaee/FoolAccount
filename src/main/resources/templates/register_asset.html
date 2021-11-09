@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>얼간뱅크</title>
+    <link rel="stylesheet" type="text/css" href="/css/register_asset.css">
+</head>
+<body>
+<div class="enter">
+    <form name="enter" method="post" action="/register_enter">
+        <div class="customer_info">
+            회원정보 확인을 위해 아이디를 입력해주세요.
+            <input type="text" id="id" name="id" placeholder="아이디">
+        </div>
+        <div class="choose_case">
+            자산 종류
+            <select class="kind" name="kind" onchange="categoryChange(this)">
+                <option value="coin">코인</option>
+                <option value="stock">주식</option>
+            </select>
+        </div>
+        <div class="choose_asset_list">
+            종목 선택하기<option></option>
+            <select id="list" class="corporation" name="corporation">
+
+            </select>
+        </div>
+        <div class="assetCount">
+            수량
+            <input type="text" id="count" name="count" placeholder="수량입력">
+        </div>
+        <div class="averagePrice">
+            평균단가
+            <input type="text" id="averagePrice" name="averagePrice" placeholder="평균단가입력">
+        </div>
+        <div class="actionCheck">
+            구매/판매
+            <select class="action" name="action">
+                <option value="buy">구매</option>
+                <option value="sell">판매</option>
+            </select>
+        </div>
+        <div class="enter_complete">
+            <button type="button" onclick="register()">완료</button>
+        </div>
+    </form>
+</div>
+<script th:inline="javascript">
+    function categoryChange(e){
+
+        var coin_list=["비트코인","아튜브","ETH 이더리움","XRP 이더리움","클레이튼","1인치"];
+        var stock_list=[[${stockList}]];
+
+        var target = document.getElementById("list")
+
+        if(e.value =="coin") {var d = coin_list;}
+        else if(e.value =="stock") {var d = stock_list;}
+        target.options.length=0;
+
+        for(x in d){
+            var opt = document.createElement("option")
+            opt.value = d[x];
+            opt.innerHTML=d[x];
+            target.appendChild(opt);
+        }
+    }
+
+    function register(){
+        alert('자산 등록이 완료되었습니다.');
+        document.enter.submit();
+    }
+</script>
+</body>
+</html>

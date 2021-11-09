@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>얼간뱅크</title>
+    <link rel="stylesheet" type="text/css" href="/css/login_fail.css">
+</head>
+<body>
+<div class="nav">
+    <div class="factory_name">
+        <button type="button" class="factory_button" onclick="location.href='main'">얼간증권</button>
+    </div>
+</div>
+<script>
+    alert('로그인에 실패하였습니다. 다시 시도해주세요.');
+</script>
+<div class="main">
+    <div id="grid">
+        <div class="left">
+        </div>
+        <div class="center">
+            <form action = "/login_fail" method="post">
+                <div class="login_title">
+                    로그인
+                </div>
+                <div class="enter_id">
+                    <input type="text" id="id" name="id" placeholder="아이디">
+                </div>
+                <div class="enter_pw">
+                    <input type="password" id="password" name="password" placeholder="비밀번호">
+                </div>
+                <div class="login_complete">
+                    <button type="submit" class="login_complete_button">로그인</button>
+                </div>
+                <div id="grid1">
+                    <div class="join">
+                        <button type="button" class="join_button" onclick="location.href='join'">회원가입</button>
+                    </div>
+                    <div class="find_id">
+                        <button type="button" class="find_id_button" onclick="location.href='find_id'">아이디찾기</button>
+                    </div>
+                    <div class="find_pw">
+                        <button type="button" class="find_pw_button" onclick="location.href='find_password'">비밀번호찾기</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+</body>
+</html>

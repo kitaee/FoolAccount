@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color : white;
+    font-weight : bold;
+    text-align : center;
+    font-family : 'Nanum Gothic';
+}
+
+.enter{
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%, -50%);
+}
+
+.enter_complete_button{
+    margin-top : 25px;
+    width : 300px;
+    height : 40px;
+    font-size : 27px;
+    font-weight : bold;
+}
+
+table,td{
+    color : white;
+    font-weight : bold;
+    font-size : 20px;
+}

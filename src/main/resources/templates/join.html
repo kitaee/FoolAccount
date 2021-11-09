@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>얼간뱅크</title>
+    <link rel="stylesheet" type="text/css" href="/css/join.css">
+</head>
+<body>
+<div class="nav">
+    <div class="factory_name">
+        <button type="button" class="factory_button" onclick="location.href='main'">얼간증권</button>
+    </div>
+</div>
+<div class="main">
+    <div id="grid">
+        <div class="left">
+        </div>
+        <div class="center">
+            <form action = "/join" method="post">
+                <div class="login_title">
+                    회원가입
+                </div>
+                <div class="enter_id">
+                    <div class="join_info">아이디</div><input type="text" id="id" name="id" placeholder="아이디">
+                </div>
+                <div class="enter_pw">
+                    <span class="join_info">비밀번호</span><input type="password" id="password" name="password" placeholder="비밀번호">
+                </div>
+                <div class="enter_pw_confirm_question">
+                    <span class="join_info">비밀번호 확인 질문</span>
+                    <select class="password_confirm_question" name="password_confirm_question">
+                        <option value="location">기억에 남는 추억의 장소는?</option>
+                        <option value="motto">자신의 좌우명은?</option>
+                        <option value="treasure">자신의 보물 1호는?</option>
+                        <option value="teacher">가장 기억에 남는 선생님의 성함은?</option>
+                        <option value="character">내가 좋아하는 캐릭터는?</option>
+                        <option value="date">가장 추억하고 싶은 날짜는?</option>
+                        <option value="secret">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                    </select>
+                </div>
+                <div class="enter_pw_confirm_question_answer">
+                    <span class="join_info">비밀번호 확인 답변</span><input type="text" id="password_confirm_question_answer" name="password_confirm_question_answer" placeholder="비밀번호 확인 답변">
+                </div>
+                <div class="enter_name">
+                    <span class="join_info">이름</span><input type="text" id="name" name="name" placeholder="이름">
+                </div>
+                <div class="enter_pw">
+                    <span class="join_info">휴대전화</span><input type="text" id="phone" name="phone" placeholder="휴대전화">
+                </div>
+                <div class="login_complete">
+                    <button type="submit" class="login_complete_button">회원가입</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+</body>
+</html>

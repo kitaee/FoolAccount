@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+    color : white;
+    font-weight : bold;
+    font-family : 'Nanum Gothic';
+}
+
+.nav{
+    border-bottom : 1px solid white;
+    height : 50px;
+}
+
+#grid{
+    display : grid;
+    grid-template-columns: 500px 300px 100px 400px;
+    height : 50px;
+}
+
+.stock_title, .coin_title{
+    text-align : center;
+    font-size : 25px;
+    margin-top : 5px;
+}
+
+.personal_information_button, .my_portfolio_button{
+    font-size : 18px;
+    border : none;
+    font-weight : bold;
+    color : white;
+    background-color : black;
+    margin-top : 7px;
+}
+
+.personal_information_button{
+    color : red;
+}
+
+.my_portfolio_button{
+    color : red;
+}
+
+#grid1{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    height : 100%;
+}
+
+.grid2{
+    display : grid;
+    grid-template-columns: 70px 200px 1fr;
+}
+
+img{
+    width : 50px;
+    height : 50px;
+    border-radius : 25px;
+}
+
+.today_stock_rank1, .today_stock_rank2, .today_stock_rank3, .today_stock_rank4, .today_stock_rank5, .today_stock_rank6{
+    margin-top : 35px;
+}
+
+.up{
+    color : red;
+}
+
+.down{
+    color : blue;
+}
+
+.today_stock_title, .today_coin_title{
+    margin-top : 35px;
+    font-size : 30px;
+}
+
+.today_stock_rank1_name, .today_stock_rank2_name, .today_stock_rank3_name, .today_stock_rank4_name, .today_stock_rank5_name, .today_stock_rank6_name{
+    margin-left : 15px;
+    margin-top : 15px;
+    font-size : 20px;
+}
+
+.today_stock_rank1_price, .today_stock_rank2_price, .today_stock_rank3_price, .today_stock_rank4_price, .today_stock_rank5_price, .today_stock_rank6_price{
+    margin-left : 200px;
+    font-size : 18px;
+}
+
+.today_coin_rank1, .today_coin_rank2, .today_coin_rank3, .today_coin_rank4, .today_coin_rank5, .today_coin_rank6{
+    margin-top : 35px;
+}
+
+.today_coin_rank1_name, .today_coin_rank2_name, .today_coin_rank3_name, .today_coin_rank4_name, .today_coin_rank5_name, .today_coin_rank6_name{
+    margin-left : 15px;
+    margin-top : 15px;
+    font-size : 20px;
+}
+
+.today_coin_rank1_price, .today_coin_rank2_price, .today_coin_rank3_price, .today_coin_rank4_price, .today_coin_rank5_price, .today_coin_rank6_price{
+    margin-left : 200px;
+    font-size : 18px;
+}
+
+.today_coin_title, .today_coin_rank1, .today_coin_rank2, .today_coin_rank3, .today_coin_rank4, .today_coin_rank5, .today_coin_rank6{
+    margin-left : 35px;
+}
+
+.btc_button, .att_button, .eth_button, .xrp_button, .klay_button, .inch_button, .samsung_button, .naver_button, .kakao_button, .nc_button, .cj_button{
+    background-color: black;
+    color : white;
+    font-weight: bold;
+    font-size : 20px;
+    outline : none;
+    border : none;
+}
+
+a{
+text-decoration : none;
+font-weight : bold;
+color : white;
+}
+
+.welcome{
+    margin-top : 10px;
+    color : red;
+    font-size : 25px;
+}
+
+#logout_button{
+    background-color : black;
+    border : white 1px solid;
+    font-size : 20px;
+    font-weight : bold;
+    color : white;
+    margin-top : 8px;
+}
+
