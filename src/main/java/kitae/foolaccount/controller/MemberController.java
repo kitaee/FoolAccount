@@ -56,6 +56,7 @@ public class MemberController {
 //        System.out.println(form.getPassword_confirm_question_answer());
 //        System.out.println(form.getName());
 //        System.out.println(form.getPhone());
+        System.out.println("github b");
         return "redirect:/";
     }
 
