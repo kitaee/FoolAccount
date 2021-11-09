@@ -142,6 +142,7 @@ public class LoginController {
             return "login_complete";
 //            resultMessage="<script>alert('로그인에 성공하셨습니다. 얼간증권을 이용해주셔서 감사합니다.');location.href='login_complete'</script>";
 //            return resultMessage;
+            //asdf
         }
         else{
             return "login_fail";
